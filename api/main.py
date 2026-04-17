@@ -35,7 +35,7 @@ async def predict(file: UploadFile = File(...)):
 
     with torch.no_grad():
         outputs = model(tensor)
-        probs = torch.argmax(outputs, dim=1)
+        probs = torch.softmax(outputs, dim=1)
         idx = probs.argmax(dim=1).item()
         conf = round(probs[0][idx].item(), 4)
     log_prediction(len(contents), CLASSES[idx], conf)
