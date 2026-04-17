@@ -20,7 +20,7 @@ transform = transforms.Compose([
 ])
 
 class PredictResponse(BaseModel):
-    predicted_class: int
+    predicted_class: str
     class_index: int
     confidence: float
 
