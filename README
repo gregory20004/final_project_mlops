@@ -1,0 +1,31 @@
+# MLOps Final Project - ResNet Classifier
+
+## Быстрый старт
+```bash
+git clone https://github.com/gregory20004/mlops_phase3
+cd mlops_phase3
+dvc pull                    #скачать данные
+python train.py             #обучить модель
+docker compose up --build   #запустить сервис локально
+```
+
+## Публичный URL
+https://classifier-production-91a1.up.railway.app
+
+## Эндпоинты
+GET   /health    - статус сервиса
+POST /predict    - предсказание по картинке (multipart/form-data)
+GET /docs        - Swagger UI
+
+## MLflow UI (локально)
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5001
+```
+
+## Мониторинг
+```bash
+python monitoring/report.py     #сгенерировать drift_report.html
+```
+
+## Стек
+DVC · Mlflow · FastAPI · Docker · GitHub Actions · Railway · Evidently

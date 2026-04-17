@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  final_project:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
