@@ -1,0 +1,13 @@
+evidently==0.6.7
+fastapi==0.136.0
+mlflow==3.11.1
+mlflow_skinny==3.11.1
+mlflow_tracing==3.11.1
+numpy==2.4.4
+pandas==3.0.2
+Pillow==12.2.0
+pydantic==2.13.2
+Requests==2.33.1
+torch==2.11.0
+torchvision==0.26.0
+uvicorn==0.44.0
