@@ -2,6 +2,7 @@ name: final project
 on:
   push:
     branches: [main]
+
   jobs:
     test:
       runs-on: ubuntu-latest
@@ -26,6 +27,4 @@ on:
           with:
             context: .
             push: true
-            tags: ${{ secrets.DOCKER_USERNAME }}/classifier:latest
-        - name: Deploy to Railway
-          run: curl -X POST "${{ secrets.RAILWAY_WEBHOOK_URL }}"
+            tags: ${{ secrets.DOCKER_USERNAME }}/classifier2:latest
