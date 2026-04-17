@@ -3,6 +3,7 @@ fastapi
 mlflow
 mlflow_skinny
 mlflow_tracing
+python-multipart
 numpy
 pandas
 Pillow
