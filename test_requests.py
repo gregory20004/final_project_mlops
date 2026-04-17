@@ -1,7 +1,7 @@
 import requests, os
 
 IMAGE_DIR = "images/"
-BASE_URL = ...
+BASE_URL =
 
 for filename in os.listdir(IMAGE_DIR):
     if filename.endswith((".jpeg", ".jpg")):
